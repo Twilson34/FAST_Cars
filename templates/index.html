@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <title>Car search app</title>
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Top header / Navbar -->
+      <!-- <nav class="navbar navbar-dark bg-dark drop-shadow">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <h2 class="text-white text-center">Here's our Car Page heading</h2>
+      </nav> -->
+      <!-- Two Column layout -->
+      <div class="row">
+        <!-- Left Sidebar -->
+        <div class="col-sm-2 left-sidebar drop-shadow">
+          <h2 class="logo-font">FaST...</h2>
+          <img
+            src="https://www.easirent.com/home2018/img/ico-car.png"
+            alt="logo"
+            width="100%"
+          />
+          <br />
+          <br />
+          <!-- Form -->
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Make</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Select Make</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">Model</label>
+              <select class="form-control" id="exampleFormControlSelect2">
+                <option>Select Model</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect3">Year</label>
+              <select class="form-control" id="exampleFormControlSelect3">
+                <option>Select Year</option>
+              </select>
+            </div>
+          </form>
+          <br />
+          <div class="sidebar-footer">
+            <h5>The FaST team:</h5>
+            <hr style="background-color: white;" />
+            <ul>
+              <li><a href="https://github.com/DeMauro">Frank DeMauro</a></li>
+              <li><a href="https://github.com/Twilson34">TJ Wilson</a></li>
+              <li><a href="http://unionindesign.com">Stephen Marshall</a></li>
+            </ul>
+            <hr style="background-color: white;" />
+            <h4>
+              <img
+                src="https://www.sferalabs.cc/wp-content/uploads/github-logo-white.png"
+                alt="gh logo"
+                width="40"
+              />
+              <a href="https://github.com/DeMauro/Project-2">
+                See the code on Github</a
+              >
+            </h4>
+          </div>
+        </div>
+        <!-- main-content, right side for data vis -->
+        <div class="col-sm-10 right-main-content">
+          <div class="row">
+            <section id="map" class="drop-shadow">
+              <!-- <h3>map goes here</h3> -->
+            </section>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="viz-container viz-container-left drop-shadow">
+                <section id="viz-three">
+                  <!-- MPG Gauge Chart -->
+                </section>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <div class="viz-container viz-container-right drop-shadow">
+                <section id="viz-two">
+                  <!-- Horizontal Bar chart -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Plotly -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    <!-- D3 CDN -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Marker Cluster JS -->
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"
+    ></script>
+    <!-- LoDash -->
+    <script src="https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)"></script>
+    <script>
+      var myData = JSON.parse(`{{ car_data | tojson | safe }}`);
+    </script>
+    <!-- Our JavaScript -->
+    <!-- API key -->
+    <script type="text/javascript" src="static/js/config.js"></script>
+    <script type="text/javascript" src="static/js/logic.js"></script>
+    <!-- Optional JavaScript -->
+  </body>
+</html>
