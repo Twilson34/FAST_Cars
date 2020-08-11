@@ -1,0 +1,44 @@
+mmy
+-
+make VARCHAR PK
+model VARCHAR PK
+year INT PK
+
+cars
+-
+make VARCHAR FK >- mmy.make
+model VARCHAR FK >- mmy.model
+year INT FK >- mmy.year
+mpg INT
+fuel VARCHAR
+size_class VARCHAR
+cylinders INT
+displacement_liters DECIMAL
+drive VARCHAR
+transmisson VARCHAR
+super_charger BOOLEAN
+turbo_charger BOOLEAN
+
+
+craigs_list
+-
+make VARCHAR FK >- mmy.make
+model VARCHAR FK >- mmy.model
+year INT FK >- mmy.year
+craigslist_price INT
+image_url VARCHAR
+description VARCHAR
+paint_color VARCHAR
+state VARCHAR FK >- gas_cost.state
+city VARCHAR	
+lat FLOAT
+lng FLOAT
+
+
+gas_cost
+-
+state VARCHAR PK
+regular FLOAT
+mid-grade FLOAT
+premium FLOAT
+diesel FLOAT

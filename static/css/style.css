@@ -1,0 +1,94 @@
+body {
+  background-color: #585858;
+}
+label {
+  color: white;
+  font-family: "Righteous", cursive;
+}
+.logo-font {
+  color: white;
+  /* font-family: "Alfa Slab One", cursive; */
+  font-size: 44px;
+  font-family: "Righteous", cursive;
+  font-style: italic;
+  text-align: center;
+}
+.drop-shadow {
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.left-sidebar {
+  background-color: #252525;
+  /* background-image: linear-gradient(45deg, #252525 5%, #afafaf 100%); */
+  padding-top: 35px;
+  height: 100vh;
+  -webkit-box-shadow: 10px 3px 5px 0px rgba(175, 175, 175, 1);
+  -moz-box-shadow: 10px 3px 5px 0px rgba(175, 175, 175, 1);
+  box-shadow: 10px 3px 5px 0px rgba(175, 175, 175, 1);
+}
+.sidebar-footer,
+.sidebar-footer hr,
+.sidebar-footer h4 a {
+  color: white;
+  font-family: "Righteous", cursive;
+}
+.sidebar-footer h4,
+h5 {
+  text-align: center;
+}
+.sidebar-footer ul li a {
+  text-align: left;
+  color: white;
+}
+.sidebar-footer ul li a:hover,
+.sidebar-footer h4 a:hover {
+  color: orange;
+}
+.right-main-content {
+  background-image: url("https://www.mewallpaper.com//thumbnail/cars/7602-mustang-hot-rod-car-hd-image-free-wallpaper.jpg");
+  height: 100vh;
+  padding: 2% 4% 2% 4%;
+}
+#map {
+  margin-bottom: 2%;
+  height: 50vh;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 9px;
+  background-color: white;
+  opacity: 0.9;
+}
+.viz-container {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 9px;
+  background-color: white;
+  opacity: 0.7;
+  min-height: 40vh;
+  max-height: 40vh;
+  
+}
+.viz-container-left {
+  margin-left: -4%;
+  margin-right: 2%;
+  padding-top: 10px;
+}
+.viz-container-right {
+  margin-left: 2%;
+  margin-right: -6%;
+  overflow-y: scroll;
+}
+.viz-container-right::-webkit-scrollbar {
+  padding-right: 10px;
+  scrollbar-width: 5px;
+  /* background-color: grey; */
+}
+/* #viz-two {
+  width: 90%;
+} */
+#viz-three {
+  /* margin: 25px 50px 25px 75px; */
+  min-height: 35vh;
+  /* width: 90%; */
+}
