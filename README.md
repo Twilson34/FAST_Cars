@@ -3,9 +3,9 @@
 
 Purpose:
 
-Our goal for this project was to develop a dashaboard that was built off of high quality data sources that would assist individuals in looking for the best information on used cars from craigslist in the entire US. We help them in doing this by providing multiple data sets that include (1) available cars on craigslist for the month of May 2020 (2) a refined directory of each car's mpg rating and (3) the average gas price in each state and combined all of that information into a comprehensible dashboard that allows the user to filter through the data on a standard web browser.
+The goal for this project was to develop a dashaboard that was built off of high quality data sources that would assist individuals in looking for the best information on used cars from craigslist in the entire US. We help them in doing this by providing multiple data sets that include (1) available cars on craigslist for the month of May 2020 (2) a refined directory of each car's mpg rating and (3) the average gas price in each state and combined all of that information into a comprehensible dashboard that allows the user to filter through the data on a standard web browser.
 
-We believe that we accomplished this goal by providing the user enough data and dashboard elements inorder to be able to turn a profit in the used car market.
+Please review our presentation file named Fast.pptx to get a overview of our process and final outcome without downloading the files and running locally. 
 
 SQL Database:
 
